@@ -9,4 +9,5 @@ class TodoRepo: BaseRepo(){
 
    fun weatherData(name: String): Single<WeatherModel> = service.getWeather(name,
       "893fbf04b665cfba5b01ecab7ac869d4")
+
 }

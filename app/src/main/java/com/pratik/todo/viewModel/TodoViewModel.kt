@@ -1,10 +1,12 @@
 package com.pratik.todo.viewModel
 
+import android.content.Context
 import android.text.TextUtils
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.pratik.todo.data.database.WorkDatabase
 import com.pratik.todo.data.model.WeatherModel
 import com.pratik.todo.repository.TodoRepo
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -41,6 +43,14 @@ class TodoViewModel: ViewModel(){
     private fun handleError(error: Throwable) {
 
         Log.d("checkError", error.localizedMessage)
+    }
+
+    fun getWork(){
+
+    }
+
+    fun insertWork(work: String){
+
     }
 
 }
